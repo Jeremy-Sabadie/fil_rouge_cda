@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             TLPmat = new TableLayoutPanel();
             DGVmat = new DataGridView();
             FLPcontainerCRUD = new FlowLayoutPanel();
@@ -36,16 +37,18 @@
             BTupdate = new Button();
             BTdellete = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
-            BTfilter = new Button();
             CBXtype = new CheckBox();
             CBXnum = new CheckBox();
             CBXdtServ = new CheckBox();
             CBXloc = new CheckBox();
+            BTfilter = new Button();
             label1 = new Label();
+            bindingSourceMateriel = new BindingSource(components);
             TLPmat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DGVmat).BeginInit();
             FLPcontainerCRUD.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceMateriel).BeginInit();
             SuspendLayout();
             // 
             // TLPmat
@@ -145,16 +148,6 @@
             tableLayoutPanel1.Size = new Size(354, 257);
             tableLayoutPanel1.TabIndex = 2;
             // 
-            // BTfilter
-            // 
-            BTfilter.Location = new Point(100, 215);
-            BTfilter.Margin = new Padding(100, 3, 3, 3);
-            BTfilter.Name = "BTfilter";
-            BTfilter.Size = new Size(131, 39);
-            BTfilter.TabIndex = 0;
-            BTfilter.Text = "TRIER";
-            BTfilter.UseVisualStyleBackColor = true;
-            // 
             // CBXtype
             // 
             CBXtype.AutoSize = true;
@@ -200,6 +193,16 @@
             CBXloc.Text = "Localisation";
             CBXloc.UseVisualStyleBackColor = true;
             // 
+            // BTfilter
+            // 
+            BTfilter.Location = new Point(100, 215);
+            BTfilter.Margin = new Padding(100, 3, 3, 3);
+            BTfilter.Name = "BTfilter";
+            BTfilter.Size = new Size(131, 39);
+            BTfilter.TabIndex = 0;
+            BTfilter.Text = "TRIER";
+            BTfilter.UseVisualStyleBackColor = true;
+            // 
             // label1
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
@@ -224,6 +227,7 @@
             FLPcontainerCRUD.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)bindingSourceMateriel).EndInit();
             ResumeLayout(false);
         }
 
@@ -243,5 +247,6 @@
         private CheckBox CBXdtServ;
         private CheckBox CBXloc;
         private Label label1;
+        private BindingSource bindingSourceMateriel;
     }
 }
