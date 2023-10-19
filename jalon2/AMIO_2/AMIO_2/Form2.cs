@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AMIO_jalon2
+namespace AMIO_2
 {
-    public partial class FormConnection : Form
+    public partial class Form2 : Form
     {
-        public FormConnection()
+        public Form2()
         {
             InitializeComponent();
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
