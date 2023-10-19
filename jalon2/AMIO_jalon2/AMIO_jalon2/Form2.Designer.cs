@@ -28,91 +28,99 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TLPconnection = new System.Windows.Forms.TableLayoutPanel();
-            this.LBmail = new System.Windows.Forms.Label();
-            this.Lbpassword = new System.Windows.Forms.Label();
-            this.TXTmail = new System.Windows.Forms.TextBox();
-            this.TXTpassword = new System.Windows.Forms.TextBox();
-            this.BtIdentify = new System.Windows.Forms.Button();
-            this.TLPconnection.SuspendLayout();
-            this.SuspendLayout();
+            TLPconnection = new TableLayoutPanel();
+            LBmail = new Label();
+            TXTmail = new TextBox();
+            TXTpassword = new TextBox();
+            Lbpassword = new Label();
+            BtIdentify = new Button();
+            TLPconnection.SuspendLayout();
+            SuspendLayout();
             // 
             // TLPconnection
             // 
-            this.TLPconnection.ColumnCount = 2;
-            this.TLPconnection.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPconnection.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPconnection.Controls.Add(this.LBmail, 0, 0);
-            this.TLPconnection.Controls.Add(this.TXTmail, 1, 0);
-            this.TLPconnection.Controls.Add(this.TXTpassword, 1, 1);
-            this.TLPconnection.Controls.Add(this.Lbpassword, 0, 1);
-            this.TLPconnection.Location = new System.Drawing.Point(229, 130);
-            this.TLPconnection.Name = "TLPconnection";
-            this.TLPconnection.RowCount = 2;
-            this.TLPconnection.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPconnection.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPconnection.Size = new System.Drawing.Size(325, 88);
-            this.TLPconnection.TabIndex = 0;
+            TLPconnection.ColumnCount = 2;
+            TLPconnection.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            TLPconnection.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            TLPconnection.Controls.Add(LBmail, 0, 0);
+            TLPconnection.Controls.Add(TXTmail, 1, 0);
+            TLPconnection.Controls.Add(TXTpassword, 1, 1);
+            TLPconnection.Controls.Add(Lbpassword, 0, 1);
+            TLPconnection.Location = new Point(393, 260);
+            TLPconnection.Margin = new Padding(5, 6, 5, 6);
+            TLPconnection.Name = "TLPconnection";
+            TLPconnection.RowCount = 2;
+            TLPconnection.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            TLPconnection.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            TLPconnection.Size = new Size(557, 176);
+            TLPconnection.TabIndex = 0;
             // 
             // LBmail
             // 
-            this.LBmail.AutoSize = true;
-            this.LBmail.Location = new System.Drawing.Point(3, 0);
-            this.LBmail.Name = "LBmail";
-            this.LBmail.Size = new System.Drawing.Size(36, 15);
-            this.LBmail.TabIndex = 0;
-            this.LBmail.Text = "email";
-            this.LBmail.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // Lbpassword
-            // 
-            this.Lbpassword.AutoSize = true;
-            this.Lbpassword.Location = new System.Drawing.Point(3, 44);
-            this.Lbpassword.Name = "Lbpassword";
-            this.Lbpassword.Size = new System.Drawing.Size(57, 15);
-            this.Lbpassword.TabIndex = 1;
-            this.Lbpassword.Text = "password";
-            this.Lbpassword.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            LBmail.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            LBmail.AutoSize = true;
+            LBmail.Location = new Point(210, 0);
+            LBmail.Margin = new Padding(5, 0, 5, 0);
+            LBmail.Name = "LBmail";
+            LBmail.Size = new Size(63, 30);
+            LBmail.TabIndex = 0;
+            LBmail.Text = "email";
+            LBmail.TextAlign = ContentAlignment.TopRight;
             // 
             // TXTmail
             // 
-            this.TXTmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TXTmail.Location = new System.Drawing.Point(165, 10);
-            this.TXTmail.Name = "TXTmail";
-            this.TXTmail.Size = new System.Drawing.Size(157, 23);
-            this.TXTmail.TabIndex = 2;
+            TXTmail.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            TXTmail.Location = new Point(283, 26);
+            TXTmail.Margin = new Padding(5, 6, 5, 6);
+            TXTmail.Name = "TXTmail";
+            TXTmail.Size = new Size(269, 35);
+            TXTmail.TabIndex = 2;
             // 
             // TXTpassword
             // 
-            this.TXTpassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TXTpassword.Location = new System.Drawing.Point(165, 54);
-            this.TXTpassword.Name = "TXTpassword";
-            this.TXTpassword.Size = new System.Drawing.Size(157, 23);
-            this.TXTpassword.TabIndex = 3;
+            TXTpassword.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            TXTpassword.Location = new Point(283, 114);
+            TXTpassword.Margin = new Padding(5, 6, 5, 6);
+            TXTpassword.Name = "TXTpassword";
+            TXTpassword.Size = new Size(269, 35);
+            TXTpassword.TabIndex = 3;
+            // 
+            // Lbpassword
+            // 
+            Lbpassword.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            Lbpassword.AutoSize = true;
+            Lbpassword.Location = new Point(173, 88);
+            Lbpassword.Margin = new Padding(5, 0, 5, 0);
+            Lbpassword.Name = "Lbpassword";
+            Lbpassword.Size = new Size(100, 30);
+            Lbpassword.TabIndex = 1;
+            Lbpassword.Text = "password";
+            Lbpassword.TextAlign = ContentAlignment.TopRight;
             // 
             // BtIdentify
             // 
-            this.BtIdentify.Location = new System.Drawing.Point(330, 240);
-            this.BtIdentify.Name = "BtIdentify";
-            this.BtIdentify.Size = new System.Drawing.Size(110, 33);
-            this.BtIdentify.TabIndex = 1;
-            this.BtIdentify.Text = "SE CONNECTER";
-            this.BtIdentify.UseVisualStyleBackColor = true;
+            BtIdentify.Location = new Point(566, 480);
+            BtIdentify.Margin = new Padding(5, 6, 5, 6);
+            BtIdentify.Name = "BtIdentify";
+            BtIdentify.Size = new Size(189, 66);
+            BtIdentify.TabIndex = 1;
+            BtIdentify.Text = "SE CONNECTER";
+            BtIdentify.UseVisualStyleBackColor = true;
             // 
             // FormConnection
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.BtIdentify);
-            this.Controls.Add(this.TLPconnection);
-            this.Name = "FormConnection";
-            this.Text = "Form2";
-            this.TLPconnection.ResumeLayout(false);
-            this.TLPconnection.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(1371, 900);
+            Controls.Add(BtIdentify);
+            Controls.Add(TLPconnection);
+            Margin = new Padding(5, 6, 5, 6);
+            Name = "FormConnection";
+            Text = "Form2";
+            TLPconnection.ResumeLayout(false);
+            TLPconnection.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

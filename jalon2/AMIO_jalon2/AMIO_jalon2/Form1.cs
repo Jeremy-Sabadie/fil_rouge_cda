@@ -11,5 +11,15 @@ namespace AMIO_jalon2
         {
 
         }
+
+        private void CBXtype_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tLPMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
