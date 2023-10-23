@@ -28,207 +28,219 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            TLPmat = new TableLayoutPanel();
-            DGVmat = new DataGridView();
-            FLPcontainerCRUD = new FlowLayoutPanel();
-            BTcreate = new Button();
-            BTread = new Button();
-            BTupdate = new Button();
-            BTdellete = new Button();
-            tableLayoutPanel1 = new TableLayoutPanel();
-            CBXtype = new CheckBox();
-            CBXnum = new CheckBox();
-            CBXdtServ = new CheckBox();
-            CBXloc = new CheckBox();
-            BTfilter = new Button();
-            label1 = new Label();
-            bindingSourceMateriel = new BindingSource(components);
-            TLPmat.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)DGVmat).BeginInit();
-            FLPcontainerCRUD.SuspendLayout();
-            tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)bindingSourceMateriel).BeginInit();
-            SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            this.TLPmat = new System.Windows.Forms.TableLayoutPanel();
+            this.DGVmat = new System.Windows.Forms.DataGridView();
+            this.FLPcontainerCRUD = new System.Windows.Forms.FlowLayoutPanel();
+            this.BTcreate = new System.Windows.Forms.Button();
+            this.BTread = new System.Windows.Forms.Button();
+            this.BTupdate = new System.Windows.Forms.Button();
+            this.BTdellete = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.CBXtype = new System.Windows.Forms.CheckBox();
+            this.CBXnum = new System.Windows.Forms.CheckBox();
+            this.CBXdtServ = new System.Windows.Forms.CheckBox();
+            this.CBXloc = new System.Windows.Forms.CheckBox();
+            this.BTfilter = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bindingSourceMateriel = new System.Windows.Forms.BindingSource(this.components);
+            this.TLPmat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVmat)).BeginInit();
+            this.FLPcontainerCRUD.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceMateriel)).BeginInit();
+            this.SuspendLayout();
             // 
             // TLPmat
             // 
-            TLPmat.ColumnCount = 1;
-            TLPmat.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 39.759037F));
-            TLPmat.Controls.Add(DGVmat, 0, 0);
-            TLPmat.Controls.Add(FLPcontainerCRUD, 0, 1);
-            TLPmat.Controls.Add(tableLayoutPanel1, 0, 2);
-            TLPmat.Dock = DockStyle.Fill;
-            TLPmat.Location = new Point(0, 0);
-            TLPmat.Name = "TLPmat";
-            TLPmat.RowCount = 3;
-            TLPmat.RowStyles.Add(new RowStyle(SizeType.Percent, 19.8795185F));
-            TLPmat.RowStyles.Add(new RowStyle(SizeType.Percent, 19.8795185F));
-            TLPmat.RowStyles.Add(new RowStyle(SizeType.Percent, 60.240963F));
-            TLPmat.Size = new Size(800, 450);
-            TLPmat.TabIndex = 0;
+            this.TLPmat.ColumnCount = 1;
+            this.TLPmat.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.75904F));
+            this.TLPmat.Controls.Add(this.DGVmat, 0, 0);
+            this.TLPmat.Controls.Add(this.FLPcontainerCRUD, 0, 1);
+            this.TLPmat.Controls.Add(this.tableLayoutPanel1, 0, 2);
+            this.TLPmat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TLPmat.Location = new System.Drawing.Point(0, 0);
+            this.TLPmat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TLPmat.Name = "TLPmat";
+            this.TLPmat.RowCount = 3;
+            this.TLPmat.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.87952F));
+            this.TLPmat.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.87952F));
+            this.TLPmat.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.24096F));
+            this.TLPmat.Size = new System.Drawing.Size(830, 464);
+            this.TLPmat.TabIndex = 0;
             // 
             // DGVmat
             // 
-            DGVmat.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DGVmat.Dock = DockStyle.Fill;
-            DGVmat.Location = new Point(3, 3);
-            DGVmat.Name = "DGVmat";
-            DGVmat.RowHeadersWidth = 72;
-            DGVmat.RowTemplate.Height = 37;
-            DGVmat.Size = new Size(794, 83);
-            DGVmat.TabIndex = 0;
+            this.DGVmat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVmat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DGVmat.Location = new System.Drawing.Point(2, 2);
+            this.DGVmat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DGVmat.Name = "DGVmat";
+            this.DGVmat.RowHeadersWidth = 72;
+            this.DGVmat.RowTemplate.Height = 37;
+            this.DGVmat.Size = new System.Drawing.Size(826, 88);
+            this.DGVmat.TabIndex = 0;
             // 
             // FLPcontainerCRUD
             // 
-            FLPcontainerCRUD.Controls.Add(BTcreate);
-            FLPcontainerCRUD.Controls.Add(BTread);
-            FLPcontainerCRUD.Controls.Add(BTupdate);
-            FLPcontainerCRUD.Controls.Add(BTdellete);
-            FLPcontainerCRUD.Location = new Point(3, 92);
-            FLPcontainerCRUD.Name = "FLPcontainerCRUD";
-            FLPcontainerCRUD.Size = new Size(767, 83);
-            FLPcontainerCRUD.TabIndex = 1;
+            this.FLPcontainerCRUD.Controls.Add(this.BTcreate);
+            this.FLPcontainerCRUD.Controls.Add(this.BTread);
+            this.FLPcontainerCRUD.Controls.Add(this.BTupdate);
+            this.FLPcontainerCRUD.Controls.Add(this.BTdellete);
+            this.FLPcontainerCRUD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FLPcontainerCRUD.Location = new System.Drawing.Point(2, 94);
+            this.FLPcontainerCRUD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FLPcontainerCRUD.Name = "FLPcontainerCRUD";
+            this.FLPcontainerCRUD.Size = new System.Drawing.Size(826, 88);
+            this.FLPcontainerCRUD.TabIndex = 1;
             // 
             // BTcreate
             // 
-            BTcreate.Location = new Point(3, 3);
-            BTcreate.Name = "BTcreate";
-            BTcreate.Size = new Size(131, 40);
-            BTcreate.TabIndex = 0;
-            BTcreate.Text = "CREATE";
-            BTcreate.UseVisualStyleBackColor = true;
+            this.BTcreate.Location = new System.Drawing.Point(2, 2);
+            this.BTcreate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTcreate.Name = "BTcreate";
+            this.BTcreate.Size = new System.Drawing.Size(76, 20);
+            this.BTcreate.TabIndex = 0;
+            this.BTcreate.Text = "CREATE";
+            this.BTcreate.UseVisualStyleBackColor = true;
             // 
             // BTread
             // 
-            BTread.Location = new Point(140, 3);
-            BTread.Name = "BTread";
-            BTread.Size = new Size(131, 40);
-            BTread.TabIndex = 1;
-            BTread.Text = "READ";
-            BTread.UseVisualStyleBackColor = true;
+            this.BTread.Location = new System.Drawing.Point(82, 2);
+            this.BTread.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTread.Name = "BTread";
+            this.BTread.Size = new System.Drawing.Size(76, 20);
+            this.BTread.TabIndex = 1;
+            this.BTread.Text = "READ";
+            this.BTread.UseVisualStyleBackColor = true;
             // 
             // BTupdate
             // 
-            BTupdate.Location = new Point(277, 3);
-            BTupdate.Name = "BTupdate";
-            BTupdate.Size = new Size(131, 40);
-            BTupdate.TabIndex = 2;
-            BTupdate.Text = "UPDATE";
-            BTupdate.UseVisualStyleBackColor = true;
+            this.BTupdate.Location = new System.Drawing.Point(162, 2);
+            this.BTupdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTupdate.Name = "BTupdate";
+            this.BTupdate.Size = new System.Drawing.Size(76, 20);
+            this.BTupdate.TabIndex = 2;
+            this.BTupdate.Text = "UPDATE";
+            this.BTupdate.UseVisualStyleBackColor = true;
             // 
             // BTdellete
             // 
-            BTdellete.Location = new Point(414, 3);
-            BTdellete.Name = "BTdellete";
-            BTdellete.Size = new Size(131, 40);
-            BTdellete.TabIndex = 3;
-            BTdellete.Text = "DELETE";
-            BTdellete.UseVisualStyleBackColor = true;
+            this.BTdellete.Location = new System.Drawing.Point(242, 2);
+            this.BTdellete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTdellete.Name = "BTdellete";
+            this.BTdellete.Size = new System.Drawing.Size(76, 20);
+            this.BTdellete.TabIndex = 3;
+            this.BTdellete.Text = "DELETE";
+            this.BTdellete.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
-            tableLayoutPanel1.ColumnCount = 1;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Controls.Add(CBXtype, 0, 1);
-            tableLayoutPanel1.Controls.Add(CBXnum, 0, 2);
-            tableLayoutPanel1.Controls.Add(CBXdtServ, 0, 3);
-            tableLayoutPanel1.Controls.Add(CBXloc, 0, 4);
-            tableLayoutPanel1.Controls.Add(BTfilter, 0, 5);
-            tableLayoutPanel1.Controls.Add(label1, 0, 0);
-            tableLayoutPanel1.Location = new Point(3, 181);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 6;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 17.1333332F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 17.1333332F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 17.1333332F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 17.1333332F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 14.333333F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 17.1333332F));
-            tableLayoutPanel1.Size = new Size(354, 257);
-            tableLayoutPanel1.TabIndex = 2;
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.CBXtype, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.CBXnum, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.CBXdtServ, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.CBXloc, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.BTfilter, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 186);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.13333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.13333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.13333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.13333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.13333F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(206, 128);
+            this.tableLayoutPanel1.TabIndex = 2;
             // 
             // CBXtype
             // 
-            CBXtype.AutoSize = true;
-            CBXtype.Location = new Point(130, 47);
-            CBXtype.Margin = new Padding(130, 3, 3, 3);
-            CBXtype.Name = "CBXtype";
-            CBXtype.Size = new Size(79, 34);
-            CBXtype.TabIndex = 1;
-            CBXtype.Text = "type";
-            CBXtype.UseVisualStyleBackColor = true;
+            this.CBXtype.AutoSize = true;
+            this.CBXtype.Location = new System.Drawing.Point(76, 23);
+            this.CBXtype.Margin = new System.Windows.Forms.Padding(76, 2, 2, 2);
+            this.CBXtype.Name = "CBXtype";
+            this.CBXtype.Size = new System.Drawing.Size(49, 17);
+            this.CBXtype.TabIndex = 1;
+            this.CBXtype.Text = "type";
+            this.CBXtype.UseVisualStyleBackColor = true;
             // 
             // CBXnum
             // 
-            CBXnum.AutoSize = true;
-            CBXnum.Location = new Point(130, 91);
-            CBXnum.Margin = new Padding(130, 3, 3, 3);
-            CBXnum.Name = "CBXnum";
-            CBXnum.Size = new Size(189, 34);
-            CBXnum.TabIndex = 2;
-            CBXnum.Text = "numéro de série";
-            CBXnum.UseVisualStyleBackColor = true;
-            CBXnum.CheckedChanged += checkBox2_CheckedChanged;
+            this.CBXnum.AutoSize = true;
+            this.CBXnum.Location = new System.Drawing.Point(76, 44);
+            this.CBXnum.Margin = new System.Windows.Forms.Padding(76, 2, 2, 2);
+            this.CBXnum.Name = "CBXnum";
+            this.CBXnum.Size = new System.Drawing.Size(111, 17);
+            this.CBXnum.TabIndex = 2;
+            this.CBXnum.Text = "numéro de série";
+            this.CBXnum.UseVisualStyleBackColor = true;
             // 
             // CBXdtServ
             // 
-            CBXdtServ.AutoSize = true;
-            CBXdtServ.Location = new Point(130, 135);
-            CBXdtServ.Margin = new Padding(130, 3, 3, 3);
-            CBXdtServ.Name = "CBXdtServ";
-            CBXdtServ.Size = new Size(221, 34);
-            CBXdtServ.TabIndex = 3;
-            CBXdtServ.Text = "date de mise en service";
-            CBXdtServ.UseVisualStyleBackColor = true;
+            this.CBXdtServ.AutoSize = true;
+            this.CBXdtServ.Location = new System.Drawing.Point(76, 65);
+            this.CBXdtServ.Margin = new System.Windows.Forms.Padding(76, 2, 2, 2);
+            this.CBXdtServ.Name = "CBXdtServ";
+            this.CBXdtServ.Size = new System.Drawing.Size(128, 17);
+            this.CBXdtServ.TabIndex = 3;
+            this.CBXdtServ.Text = "date de mise en service";
+            this.CBXdtServ.UseVisualStyleBackColor = true;
             // 
             // CBXloc
             // 
-            CBXloc.AutoSize = true;
-            CBXloc.Location = new Point(130, 179);
-            CBXloc.Margin = new Padding(130, 3, 3, 3);
-            CBXloc.Name = "CBXloc";
-            CBXloc.Size = new Size(148, 30);
-            CBXloc.TabIndex = 4;
-            CBXloc.Text = "Localisation";
-            CBXloc.UseVisualStyleBackColor = true;
+            this.CBXloc.AutoSize = true;
+            this.CBXloc.Location = new System.Drawing.Point(76, 86);
+            this.CBXloc.Margin = new System.Windows.Forms.Padding(76, 2, 2, 2);
+            this.CBXloc.Name = "CBXloc";
+            this.CBXloc.Size = new System.Drawing.Size(89, 14);
+            this.CBXloc.TabIndex = 4;
+            this.CBXloc.Text = "Localisation";
+            this.CBXloc.UseVisualStyleBackColor = true;
             // 
             // BTfilter
             // 
-            BTfilter.Location = new Point(100, 215);
-            BTfilter.Margin = new Padding(100, 3, 3, 3);
-            BTfilter.Name = "BTfilter";
-            BTfilter.Size = new Size(131, 39);
-            BTfilter.TabIndex = 0;
-            BTfilter.Text = "TRIER";
-            BTfilter.UseVisualStyleBackColor = true;
+            this.BTfilter.Location = new System.Drawing.Point(58, 104);
+            this.BTfilter.Margin = new System.Windows.Forms.Padding(58, 2, 2, 2);
+            this.BTfilter.Name = "BTfilter";
+            this.BTfilter.Size = new System.Drawing.Size(76, 20);
+            this.BTfilter.TabIndex = 0;
+            this.BTfilter.Text = "TRIER";
+            this.BTfilter.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Location = new Point(3, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(348, 30);
-            label1.TabIndex = 5;
-            label1.Text = "Trier par";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(2, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(202, 15);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Trier par";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(12F, 30F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(TLPmat);
-            Name = "Form2";
-            Text = "Materiel";
-            TLPmat.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)DGVmat).EndInit();
-            FLPcontainerCRUD.ResumeLayout(false);
-            tableLayoutPanel1.ResumeLayout(false);
-            tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)bindingSourceMateriel).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(830, 464);
+            this.Controls.Add(this.TLPmat);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "Form2";
+            this.Text = "Materiel";
+            this.TLPmat.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGVmat)).EndInit();
+            this.FLPcontainerCRUD.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceMateriel)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
