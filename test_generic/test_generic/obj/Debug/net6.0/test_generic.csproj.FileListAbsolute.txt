@@ -1,0 +1,15 @@
+C:\Users\cda07saba\Desktop\fil_rouge_cda\test_generic\test_generic\bin\Debug\net6.0\test_generic.exe
+C:\Users\cda07saba\Desktop\fil_rouge_cda\test_generic\test_generic\bin\Debug\net6.0\test_generic.deps.json
+C:\Users\cda07saba\Desktop\fil_rouge_cda\test_generic\test_generic\bin\Debug\net6.0\test_generic.runtimeconfig.json
+C:\Users\cda07saba\Desktop\fil_rouge_cda\test_generic\test_generic\bin\Debug\net6.0\test_generic.dll
+C:\Users\cda07saba\Desktop\fil_rouge_cda\test_generic\test_generic\bin\Debug\net6.0\test_generic.pdb
+C:\Users\cda07saba\Desktop\fil_rouge_cda\test_generic\test_generic\obj\Debug\net6.0\test_generic.csproj.AssemblyReference.cache
+C:\Users\cda07saba\Desktop\fil_rouge_cda\test_generic\test_generic\obj\Debug\net6.0\test_generic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cda07saba\Desktop\fil_rouge_cda\test_generic\test_generic\obj\Debug\net6.0\test_generic.AssemblyInfoInputs.cache
+C:\Users\cda07saba\Desktop\fil_rouge_cda\test_generic\test_generic\obj\Debug\net6.0\test_generic.AssemblyInfo.cs
+C:\Users\cda07saba\Desktop\fil_rouge_cda\test_generic\test_generic\obj\Debug\net6.0\test_generic.csproj.CoreCompileInputs.cache
+C:\Users\cda07saba\Desktop\fil_rouge_cda\test_generic\test_generic\obj\Debug\net6.0\test_generic.dll
+C:\Users\cda07saba\Desktop\fil_rouge_cda\test_generic\test_generic\obj\Debug\net6.0\refint\test_generic.dll
+C:\Users\cda07saba\Desktop\fil_rouge_cda\test_generic\test_generic\obj\Debug\net6.0\test_generic.pdb
+C:\Users\cda07saba\Desktop\fil_rouge_cda\test_generic\test_generic\obj\Debug\net6.0\test_generic.genruntimeconfig.cache
+C:\Users\cda07saba\Desktop\fil_rouge_cda\test_generic\test_generic\obj\Debug\net6.0\ref\test_generic.dll
