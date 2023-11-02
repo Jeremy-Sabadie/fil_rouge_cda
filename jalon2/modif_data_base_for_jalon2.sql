@@ -39,3 +39,11 @@ ON DELETE CASCADE;
 -- ON DELETE CASCADE : Cette clause indique que les lignes de la table userMateriel 
 -- qui font référence à une ligne supprimée de la table user 
 -- seront également supprimées.
+
+--Requete invalide pour la création de la table CategoryMateriel :
+CREATE TABLE categoryMateriel (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    idMat INT,
+    FOREIGN KEY (idMat) REFERENCES Materiel(serialNumber)
+);
+-- La requête est donnée cmme invalide pour une mauvaise déclaration de clef étrangère mais la syntaxe et les type sembles bons.
