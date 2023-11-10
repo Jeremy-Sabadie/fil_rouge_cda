@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace AMIO_2
+﻿namespace AMIO_2
 {
     public partial class Form2 : Form
     {
@@ -18,6 +8,11 @@ namespace AMIO_2
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CBXnum_CheckedChanged(object sender, EventArgs e)
         {
 
         }
