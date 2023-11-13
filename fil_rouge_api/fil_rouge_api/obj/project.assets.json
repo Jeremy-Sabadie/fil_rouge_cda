@@ -2,6 +2,28 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "cnkiCrawler.MysqlData/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/CnkiCrawler.MySqlData.dll": {}
+        },
+        "runtime": {
+          "lib/CnkiCrawler.MySqlData.dll": {}
+        }
+      },
+      "Dapper/2.1.21": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
         "type": "package",
         "build": {
@@ -92,6 +114,39 @@
     }
   },
   "libraries": {
+    "cnkiCrawler.MysqlData/2.0.0": {
+      "sha512": "kG9utKuSQgSQfW4ayx9iZz62G3kxht0en6UQKXxrBKAF+x3pi9au9AxUVzVup4noHQQhekGqDbb6cjh5XuLIUg==",
+      "type": "package",
+      "path": "cnkicrawler.mysqldata/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cnkicrawler.mysqldata.2.0.0.nupkg.sha512",
+        "cnkicrawler.mysqldata.nuspec",
+        "lib/CnkiCrawler.MySqlData.dll"
+      ]
+    },
+    "Dapper/2.1.21": {
+      "sha512": "EaTXNZX60/k9snRsLxFhD2XmoSKubc+VOeL3hBM6/R8j2MT8/81xOc2V8EEhwr8Mu3Sf951PJPxjlXN4FznH0w==",
+      "type": "package",
+      "path": "dapper/2.1.21",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.1.21.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net5.0/Dapper.dll",
+        "lib/net5.0/Dapper.xml",
+        "lib/net7.0/Dapper.dll",
+        "lib/net7.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml",
+        "readme.md"
+      ]
+    },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "sha512": "LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
       "type": "package",
@@ -220,7 +275,9 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Swashbuckle.AspNetCore >= 6.2.3"
+      "Dapper >= 2.1.21",
+      "Swashbuckle.AspNetCore >= 6.2.3",
+      "cnkiCrawler.MysqlData >= 2.0.0"
     ]
   },
   "packageFolders": {
@@ -268,9 +325,17 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.1.21, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"
+          },
+          "cnkiCrawler.MysqlData": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           }
         },
         "imports": [
@@ -295,5 +360,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Le package 'cnkiCrawler.MysqlData 2.0.0' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' au lieu du framework cible du projet 'net6.0'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
+      "libraryId": "cnkiCrawler.MysqlData",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
