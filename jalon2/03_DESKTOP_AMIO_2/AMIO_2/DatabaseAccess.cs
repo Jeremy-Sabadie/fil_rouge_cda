@@ -9,16 +9,16 @@ namespace AMIO_2
         public DatabaseAccess()
         {
 
-            _dbconnection = new("Server=lab005.2isa.org;Port=33005;Database=dbWinForm;UID=root;PWD=1365lab005");
+            _dbconnection = new("Server=lab005.2isa.org;Port=33005;Database=filrouge;UID=root;PWD=1365lab005");
         }
         //READ  of the CRUD:
-        public IEnumerable<Materiel> GetAllMaterials()
+        public async Task<IEnumerable<Materiel>> GetMaterialsAsync()
         {
             try
             {
-                _dbconnection.Open();
+                await _dbconnection.OpenAsync();
                 string selectAllQuery = "select * from materiel";
-                return _dbconnection.Query<Materiel>(selectAllQuery);
+                return await _dbconnection.QueryAsync<Materiel>(selectAllQuery);
 
             }
 
@@ -28,11 +28,11 @@ namespace AMIO_2
             }
         }
         //CREATE of the CRUD:
-        public int AddMaterial(string name)
+        public async Task<int> AddMaterialAsync(string name)
         {
             try
             {
-                _dbconnection.Open();
+                await _dbconnection.OpenAsync();
                 var insertQuery = "INSERT INTO article (name, serviceDat , endGarntee,propriétaireId) VALUES (@name, @endGarntee,@propriétaireId); SELECT LAST_INSERT_ID() ";
                 var result = _dbconnection.Query<int>(insertQuery, new { name });
                 return result.Single();
@@ -59,5 +59,6 @@ namespace AMIO_2
             }
 
         }
+        //TO DO: DELETE for the crud:
     }
 }
