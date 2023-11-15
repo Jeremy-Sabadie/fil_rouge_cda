@@ -159,6 +159,7 @@
             this.BTvalid.TabIndex = 1;
             this.BTvalid.Text = "VALIDER";
             this.BTvalid.UseVisualStyleBackColor = true;
+            this.BTvalid.Click += new System.EventHandler(this.BTvalid_Click);
             // 
             // Form1
             // 

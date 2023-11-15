@@ -7,6 +7,11 @@ name varchar(20),
    fk_idMat int,
     serviceDat datetime,
     endGarntee datetime
+);
+    --===================================================
+    -- ADD COLUMN propriétaireId:
+    ALTER TABLE materiel 
+ADD  propriétaireId bigint(20) UNSIGNED;
 --===================================================
 --Création of the material categories CategoryMateriel table:
 create table CategoryMateriel(
