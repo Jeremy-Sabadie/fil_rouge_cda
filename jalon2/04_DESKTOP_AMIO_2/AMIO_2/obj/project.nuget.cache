@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qnDOGyiUSyRuMaKP4W3jccJN3BrAnmGTTcWTWKB4BkPjbO0mLoggvRVcUEVgAgPTlp7wcC4lJQ1L1YoK8On/Ow==",
+  "dgSpecHash": "nGvSN2ut5VbgkyBdMMyd1b7AyzXp9ps3zDxbKlC62OtZucu817kg+wjBZEdawJGHuR32jft/VIxDpWCnWzHI3A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\fil_rouge_cda\\jalon2\\03_DESKTOP_AMIO_2\\AMIO_2\\AMIO_2.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\fil_rouge_cda\\jalon2\\04_DESKTOP_AMIO_2\\AMIO_2\\AMIO_2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\ca.blocks.dataaccess\\3.1.122\\ca.blocks.dataaccess.3.1.122.nupkg.sha512",

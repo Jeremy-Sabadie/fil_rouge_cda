@@ -1959,11 +1959,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\fil_rouge_cda\\jalon2\\03_DESKTOP_AMIO_2\\AMIO_2\\AMIO_2.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\fil_rouge_cda\\jalon2\\04_DESKTOP_AMIO_2\\AMIO_2\\AMIO_2.csproj",
       "projectName": "AMIO_2",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\fil_rouge_cda\\jalon2\\03_DESKTOP_AMIO_2\\AMIO_2\\AMIO_2.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\fil_rouge_cda\\jalon2\\04_DESKTOP_AMIO_2\\AMIO_2\\AMIO_2.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\fil_rouge_cda\\jalon2\\03_DESKTOP_AMIO_2\\AMIO_2\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\fil_rouge_cda\\jalon2\\04_DESKTOP_AMIO_2\\AMIO_2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

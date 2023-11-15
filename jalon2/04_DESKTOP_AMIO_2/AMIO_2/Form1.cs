@@ -18,9 +18,9 @@ namespace AMIO_2
 
         }
 
-        private void BTvalid_Click(object sender, EventArgs e)
+        private async void BTvalid_Click(object sender, EventArgs e)
         {
-            _db.GetAllMaterials();
+            await _db.GetMaterialsAsync();
         }
     }
 }
