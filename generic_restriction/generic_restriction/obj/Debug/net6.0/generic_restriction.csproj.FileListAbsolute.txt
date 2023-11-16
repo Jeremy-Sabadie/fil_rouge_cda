@@ -1,5 +1,0 @@
-C:\Users\cda07saba\Desktop\fil_rouge_cda\generic_restriction\generic_restriction\obj\Debug\net6.0\generic_restriction.csproj.AssemblyReference.cache
-C:\Users\cda07saba\Desktop\fil_rouge_cda\generic_restriction\generic_restriction\obj\Debug\net6.0\generic_restriction.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\cda07saba\Desktop\fil_rouge_cda\generic_restriction\generic_restriction\obj\Debug\net6.0\generic_restriction.AssemblyInfoInputs.cache
-C:\Users\cda07saba\Desktop\fil_rouge_cda\generic_restriction\generic_restriction\obj\Debug\net6.0\generic_restriction.AssemblyInfo.cs
-C:\Users\cda07saba\Desktop\fil_rouge_cda\generic_restriction\generic_restriction\obj\Debug\net6.0\generic_restriction.csproj.CoreCompileInputs.cache
