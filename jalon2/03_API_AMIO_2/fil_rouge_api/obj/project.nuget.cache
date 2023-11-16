@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QpFcMe4pU3+Acy+C6anzDmU5nxWhnJhJQXdE28SHOWlU/oyVzhAP6oDF+RS4wTFkiLqz+mw6O5bn8ZTbpl40SQ==",
+  "dgSpecHash": "IWP0d5PCvSUYwFMVvTlK/eIc2He3hncMEZULMGUqcqsx4xshXp1k1N588iDCAeIp0plv653RvRY9V/Ed1vIeDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cda07saba\\Desktop\\fil_rouge_cda\\jalon2\\04_API_AMIO_2\\fil_rouge_api\\fil_rouge_api.csproj",
+  "projectFilePath": "C:\\Users\\cda07saba\\Desktop\\fil_rouge_cda\\jalon2\\03_API_AMIO_2\\fil_rouge_api\\fil_rouge_api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cda07saba\\.nuget\\packages\\cnkicrawler.mysqldata\\2.0.0\\cnkicrawler.mysqldata.2.0.0.nupkg.sha512",
     "C:\\Users\\cda07saba\\.nuget\\packages\\dapper\\2.1.21\\dapper.2.1.21.nupkg.sha512",
