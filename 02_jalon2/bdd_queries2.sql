@@ -114,8 +114,8 @@ CREATE TABLE category (
 --=====================================================
 -- TABLE CATEGORYMATERIEL:
  create table CategoryMateriel(
-  refCat bigint(20) unsigned,
-  idMat bigint(20) unsigned,
+  refCat int,
+  idMat int,
   FOREIGN KEY (refCat) REFERENCES category(ref),
   FOREIGN KEY (idMat) REFERENCES materiel(id)
  );
