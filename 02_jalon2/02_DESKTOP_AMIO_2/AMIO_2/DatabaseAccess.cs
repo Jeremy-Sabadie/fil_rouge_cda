@@ -11,6 +11,7 @@ namespace AMIO_2
 
             _dbconnection = new("Server=lab005.2isa.org;Port=33005;Database=filrouge;UID=root;PWD=1365lab005");
         }
+        #region CRUD-read 
         //READ  of the CRUD:
         public async Task<IEnumerable<Materiel>> GetMaterialsAsync()
         {
@@ -27,8 +28,10 @@ namespace AMIO_2
                 _dbconnection.Close();
             }
         }
+        #endregion
+        #region CRUD-create
         //CREATE of the CRUD:
-        public async Task<int> AddMaterialAsync(string name)
+        public async Task<int> AddMaterialAsync(string name, DateTime serviceDat, DateTime endGarantee, string ownerName)
         {
             try
             {
@@ -42,15 +45,17 @@ namespace AMIO_2
                 _dbconnection.Close();
             }
         }
+        #endregion
         //UPDATE of the CRUD:
-        public int updateMaterial(string name)
+        #region CRUD-update
+        public int updateMaterial(string oldName, DateTime oldServiceDat, DateTime oldEndGarantee, int oldProprietaireId, string newName, DateTime newServiceDat, DateTime newEndGarantee, int newProprietaireId)
         {
             try
             {
                 _dbconnection.Open();
-                var updateQuery = "UPDATE materiel SET name = @name," +
-                    "serviceDat= @serviceDat,endGarntee=@endGarntee, propriétaireId=@propriétaireId WHERE id = @id ;";
-                return _dbconnection.Execute(updateQuery, new { name });
+                var updateQuery = "UPDATE materiel SET name = @newName," +
+                    "serviceDat= @newServiceDat,endGarntee=@newEndGarantee, propriétaireId=@propriétaireId WHERE id = @oldProprietaireId where id=oldProprietaireId;";
+                return _dbconnection.Execute(updateQuery, new { newName, newServiceDat, newEndGarantee, newProprietaireId });
 
             }
             finally
@@ -59,6 +64,9 @@ namespace AMIO_2
             }
 
         }
+        #endregion
+        #region CRUD delete
         //TO DO: DELETE for the crud:
+        #endregion
     }
 }
