@@ -65,25 +65,24 @@ namespace AMIO_2
 
         }
         #endregion
-        #region CRUD delete
+
+        #region CRUD-delete
         //TO DO: DELETE for the crud:
-        async Task<int> DeleteMaterielAsync(string name, int id)
+        public async Task<int> DeleteMaterielAsync(string name, int id)
         {
             //Variable contenant la requête pour la suppression de l'article:
             var deleteQuery = "delete from materiel were id = @id";
             // Affichage de la boîte de dialogue pour confirmation:
-            var confirmResult = MessageBox.Show($"Confirmez-vous la suppression du matériel: {name} ?", "confirmation", MessageBoxButtons.YesNo);
-            if (confirmResult == DialogResult.Yes)
-            {
-                try
-                {
-                    await _dbconnection.OpenAsync();
-                    var res = await _dbconnection.ExecuteAsync(deleteQuery, new { name, id });
-                    return res;
-                }
-                finally { await _dbconnection.CloseAsync(); }
 
+            try
+            {
+                await _dbconnection.OpenAsync();
+                var res = await _dbconnection.ExecuteAsync(deleteQuery, new { name, id });
+                return res;
             }
+            finally { await _dbconnection.CloseAsync(); }
+
+
 
             #endregion
         }

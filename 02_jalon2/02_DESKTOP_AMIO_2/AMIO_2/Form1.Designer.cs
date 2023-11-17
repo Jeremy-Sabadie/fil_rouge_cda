@@ -28,154 +28,145 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TLPMain = new System.Windows.Forms.TableLayoutPanel();
-            this.TLPformConnection = new System.Windows.Forms.TableLayoutPanel();
-            this.TXTpassword = new System.Windows.Forms.TextBox();
-            this.LBpassword = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.LBid = new System.Windows.Forms.Label();
-            this.LBconnection = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.BTvalid = new System.Windows.Forms.Button();
-            this.TLPMain.SuspendLayout();
-            this.TLPformConnection.SuspendLayout();
-            this.SuspendLayout();
+            TLPMain = new TableLayoutPanel();
+            TLPformConnection = new TableLayoutPanel();
+            TXTpassword = new TextBox();
+            LBpassword = new Label();
+            textBox1 = new TextBox();
+            LBid = new Label();
+            LBconnection = new Label();
+            textBox2 = new TextBox();
+            BTvalid = new Button();
+            TLPMain.SuspendLayout();
+            TLPformConnection.SuspendLayout();
+            SuspendLayout();
             // 
             // TLPMain
             // 
-            this.TLPMain.ColumnCount = 1;
-            this.TLPMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPMain.Controls.Add(this.TLPformConnection, 0, 0);
-            this.TLPMain.Controls.Add(this.textBox2, 0, 2);
-            this.TLPMain.Controls.Add(this.BTvalid, 0, 1);
-            this.TLPMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TLPMain.Location = new System.Drawing.Point(0, 0);
-            this.TLPMain.Margin = new System.Windows.Forms.Padding(2);
-            this.TLPMain.Name = "TLPMain";
-            this.TLPMain.RowCount = 3;
-            this.TLPMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TLPMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.TLPMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.TLPMain.Size = new System.Drawing.Size(467, 225);
-            this.TLPMain.TabIndex = 0;
+            TLPMain.ColumnCount = 1;
+            TLPMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            TLPMain.Controls.Add(TLPformConnection, 0, 0);
+            TLPMain.Controls.Add(textBox2, 0, 2);
+            TLPMain.Controls.Add(BTvalid, 0, 1);
+            TLPMain.Dock = DockStyle.Fill;
+            TLPMain.Location = new Point(0, 0);
+            TLPMain.Margin = new Padding(3, 4, 3, 4);
+            TLPMain.Name = "TLPMain";
+            TLPMain.RowCount = 3;
+            TLPMain.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            TLPMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 180F));
+            TLPMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            TLPMain.Size = new Size(801, 450);
+            TLPMain.TabIndex = 0;
             // 
             // TLPformConnection
             // 
-            this.TLPformConnection.ColumnCount = 2;
-            this.TLPformConnection.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.900709F));
-            this.TLPformConnection.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96.09929F));
-            this.TLPformConnection.Controls.Add(this.TXTpassword, 1, 4);
-            this.TLPformConnection.Controls.Add(this.LBpassword, 1, 3);
-            this.TLPformConnection.Controls.Add(this.textBox1, 1, 2);
-            this.TLPformConnection.Controls.Add(this.LBid, 1, 1);
-            this.TLPformConnection.Controls.Add(this.LBconnection, 1, 0);
-            this.TLPformConnection.Location = new System.Drawing.Point(120, 2);
-            this.TLPformConnection.Margin = new System.Windows.Forms.Padding(120, 2, 2, 2);
-            this.TLPformConnection.Name = "TLPformConnection";
-            this.TLPformConnection.RowCount = 5;
-            this.TLPformConnection.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.44628F));
-            this.TLPformConnection.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.83471F));
-            this.TLPformConnection.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.00826F));
-            this.TLPformConnection.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.34426F));
-            this.TLPformConnection.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.26229F));
-            this.TLPformConnection.Size = new System.Drawing.Size(221, 112);
-            this.TLPformConnection.TabIndex = 0;
+            TLPformConnection.ColumnCount = 2;
+            TLPformConnection.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 3.900709F));
+            TLPformConnection.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 96.09929F));
+            TLPformConnection.Controls.Add(TXTpassword, 1, 4);
+            TLPformConnection.Controls.Add(LBpassword, 1, 3);
+            TLPformConnection.Controls.Add(textBox1, 1, 2);
+            TLPformConnection.Controls.Add(LBid, 1, 1);
+            TLPformConnection.Controls.Add(LBconnection, 1, 0);
+            TLPformConnection.Location = new Point(206, 4);
+            TLPformConnection.Margin = new Padding(206, 4, 3, 4);
+            TLPformConnection.Name = "TLPformConnection";
+            TLPformConnection.RowCount = 5;
+            TLPformConnection.RowStyles.Add(new RowStyle(SizeType.Percent, 26.44628F));
+            TLPformConnection.RowStyles.Add(new RowStyle(SizeType.Percent, 19.83471F));
+            TLPformConnection.RowStyles.Add(new RowStyle(SizeType.Percent, 19.00826F));
+            TLPformConnection.RowStyles.Add(new RowStyle(SizeType.Percent, 14.34426F));
+            TLPformConnection.RowStyles.Add(new RowStyle(SizeType.Percent, 19.26229F));
+            TLPformConnection.Size = new Size(379, 224);
+            TLPformConnection.TabIndex = 0;
             // 
             // TXTpassword
             // 
-            this.TXTpassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TXTpassword.Location = new System.Drawing.Point(10, 90);
-            this.TXTpassword.Margin = new System.Windows.Forms.Padding(2);
-            this.TXTpassword.Name = "TXTpassword";
-            this.TXTpassword.Size = new System.Drawing.Size(209, 23);
-            this.TXTpassword.TabIndex = 5;
+            TXTpassword.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            TXTpassword.Location = new Point(17, 182);
+            TXTpassword.Margin = new Padding(3, 4, 3, 4);
+            TXTpassword.Name = "TXTpassword";
+            TXTpassword.Size = new Size(359, 35);
+            TXTpassword.TabIndex = 5;
             // 
             // LBpassword
             // 
-            this.LBpassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LBpassword.AutoSize = true;
-            this.LBpassword.Location = new System.Drawing.Point(10, 73);
-            this.LBpassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LBpassword.Name = "LBpassword";
-            this.LBpassword.Size = new System.Drawing.Size(209, 15);
-            this.LBpassword.TabIndex = 1;
-            this.LBpassword.Text = "Mot de passe";
-            this.LBpassword.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            LBpassword.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            LBpassword.AutoSize = true;
+            LBpassword.Location = new Point(17, 148);
+            LBpassword.Name = "LBpassword";
+            LBpassword.Size = new Size(359, 30);
+            LBpassword.TabIndex = 1;
+            LBpassword.Text = "Mot de passe";
+            LBpassword.TextAlign = ContentAlignment.BottomCenter;
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(10, 56);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 5, 2, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(209, 23);
-            this.textBox1.TabIndex = 2;
+            textBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBox1.Location = new Point(17, 113);
+            textBox1.Margin = new Padding(3, 10, 3, 4);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(359, 35);
+            textBox1.TabIndex = 2;
             // 
             // LBid
             // 
-            this.LBid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LBid.AutoSize = true;
-            this.LBid.Location = new System.Drawing.Point(10, 36);
-            this.LBid.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LBid.Name = "LBid";
-            this.LBid.Size = new System.Drawing.Size(209, 15);
-            this.LBid.TabIndex = 0;
-            this.LBid.Text = "email";
-            this.LBid.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            LBid.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            LBid.AutoSize = true;
+            LBid.Location = new Point(17, 73);
+            LBid.Name = "LBid";
+            LBid.Size = new Size(359, 30);
+            LBid.TabIndex = 0;
+            LBid.Text = "email";
+            LBid.TextAlign = ContentAlignment.BottomCenter;
             // 
             // LBconnection
             // 
-            this.LBconnection.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LBconnection.AutoSize = true;
-            this.LBconnection.Location = new System.Drawing.Point(10, 15);
-            this.LBconnection.Margin = new System.Windows.Forms.Padding(2, 15, 2, 0);
-            this.LBconnection.Name = "LBconnection";
-            this.LBconnection.Size = new System.Drawing.Size(209, 14);
-            this.LBconnection.TabIndex = 4;
-            this.LBconnection.Text = "CONNECTION";
-            this.LBconnection.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            LBconnection.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            LBconnection.AutoSize = true;
+            LBconnection.Location = new Point(17, 30);
+            LBconnection.Margin = new Padding(3, 30, 3, 0);
+            LBconnection.Name = "LBconnection";
+            LBconnection.Size = new Size(359, 29);
+            LBconnection.TabIndex = 4;
+            LBconnection.Text = "CONNECTION";
+            LBconnection.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // textBox2
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(2, 230);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 15, 2, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(463, 23);
-            this.textBox2.TabIndex = 3;
+            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textBox2.Location = new Point(3, 460);
+            textBox2.Margin = new Padding(3, 30, 3, 4);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(795, 35);
+            textBox2.TabIndex = 3;
             // 
             // BTvalid
             // 
-            this.BTvalid.Location = new System.Drawing.Point(180, 135);
-            this.BTvalid.Margin = new System.Windows.Forms.Padding(180, 10, 2, 2);
-            this.BTvalid.Name = "BTvalid";
-            this.BTvalid.Size = new System.Drawing.Size(76, 29);
-            this.BTvalid.TabIndex = 1;
-            this.BTvalid.Text = "VALIDER";
-            this.BTvalid.UseVisualStyleBackColor = true;
-            this.BTvalid.Click += new System.EventHandler(this.BTvalid_Click_1);
+            BTvalid.Location = new Point(309, 270);
+            BTvalid.Margin = new Padding(309, 20, 3, 4);
+            BTvalid.Name = "BTvalid";
+            BTvalid.Size = new Size(130, 58);
+            BTvalid.TabIndex = 1;
+            BTvalid.Text = "VALIDER";
+            BTvalid.UseVisualStyleBackColor = true;
+            BTvalid.Click += BTvalid_Click_1;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(467, 225);
-            this.Controls.Add(this.TLPMain);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form1";
-            this.Text = "Connection";
-            this.TLPMain.ResumeLayout(false);
-            this.TLPMain.PerformLayout();
-            this.TLPformConnection.ResumeLayout(false);
-            this.TLPformConnection.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(801, 450);
+            Controls.Add(TLPMain);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Form1";
+            Text = "Connection";
+            TLPMain.ResumeLayout(false);
+            TLPMain.PerformLayout();
+            TLPformConnection.ResumeLayout(false);
+            TLPformConnection.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

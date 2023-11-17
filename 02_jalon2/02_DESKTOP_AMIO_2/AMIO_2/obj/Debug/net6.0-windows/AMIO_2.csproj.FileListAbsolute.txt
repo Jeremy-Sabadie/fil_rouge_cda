@@ -202,3 +202,15 @@ C:\Users\cda07saba\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\
 C:\Users\cda07saba\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.pdb
 C:\Users\cda07saba\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.genruntimeconfig.cache
 C:\Users\cda07saba\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\ref\AMIO_2.dll
+C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.Form1.resources
+C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.Form2.resources
+C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.Properties.Resources.resources
+C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.AssemblyInfo.cs
+C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.dll
+C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\refint\AMIO_2.dll
+C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.pdb

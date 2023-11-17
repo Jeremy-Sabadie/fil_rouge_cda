@@ -39,10 +39,24 @@
         {
             var mateial = await _db.AddMaterialAsync(TXTname.Text, DTPservDat.Value, DTPendGarantee.Value, TXTowner.Text);
         }
-
+        //TO DO: write all the arguments necessary on the update function call.
         private void BTupdate_Click(object sender, EventArgs e)
         {
             _db.updateMaterial(TXTname.Text);
         }
+
+        private void BTdellete_Click(object sender, EventArgs e)
+        {
+            //TO DO: retrieve information about the element being deleted.
+            var confirmResult = MessageBox.Show($"Confirmez-vous la suppression du matériel: ... ?", "confirmation", MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
+            {
+                _db.DeleteMaterielAsync(TXTname.Text, NUDmatNumber.Value);
+            }
+        }
+
+        private void TXTowner_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
-}
