@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.TLPmat = new System.Windows.Forms.TableLayoutPanel();
             this.DGVmat = new System.Windows.Forms.DataGridView();
             this.FLPcontainerCRUD = new System.Windows.Forms.FlowLayoutPanel();
@@ -233,6 +234,7 @@
             // 
             // BTupdate
             // 
+            this.BTupdate.Image = global::AMIO_2.Properties.Resources.refresh_arrow_15461;
             this.BTupdate.Location = new System.Drawing.Point(228, 10);
             this.BTupdate.Margin = new System.Windows.Forms.Padding(10);
             this.BTupdate.Name = "BTupdate";
@@ -240,9 +242,11 @@
             this.BTupdate.TabIndex = 2;
             this.BTupdate.Text = "UPDATE";
             this.BTupdate.UseVisualStyleBackColor = true;
+            this.BTupdate.Click += new System.EventHandler(this.BTupdate_Click);
             // 
             // BTread
             // 
+            this.BTread.Image = ((System.Drawing.Image)(resources.GetObject("BTread.Image")));
             this.BTread.Location = new System.Drawing.Point(119, 10);
             this.BTread.Margin = new System.Windows.Forms.Padding(10);
             this.BTread.Name = "BTread";
@@ -250,6 +254,7 @@
             this.BTread.TabIndex = 1;
             this.BTread.Text = "READ";
             this.BTread.UseVisualStyleBackColor = true;
+            this.BTread.Click += new System.EventHandler(this.BTread_Click);
             // 
             // BTcreate
             // 
@@ -260,6 +265,7 @@
             this.BTcreate.TabIndex = 0;
             this.BTcreate.Text = "CREATE";
             this.BTcreate.UseVisualStyleBackColor = true;
+            this.BTcreate.Click += new System.EventHandler(this.BTcreate_Click);
             // 
             // BTfiltre
             // 
