@@ -2,9 +2,9 @@
 {
     internal class Materiel
     {
-        private string name { get; set; }
-        private DateTime serviceDat { get; set; }
-        private DateTime endGarantee { get; set; }
-        private User propriétaire { get; set; }
+        public string name { get; set; }
+        public DateTime serviceDat { get; set; }
+        public DateTime endGarantee { get; set; }
+        public User propriétaire { get; set; }
     }
 }

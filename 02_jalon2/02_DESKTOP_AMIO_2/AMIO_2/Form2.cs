@@ -42,7 +42,7 @@
         //TO DO: write all the arguments necessary on the update function call.
         private void BTupdate_Click(object sender, EventArgs e)
         {
-            _db.updateMaterial(TXTname.Text);
+            //_db.updateMaterial(TXTname.Text);
         }
 
         private void BTdellete_Click(object sender, EventArgs e)
@@ -51,7 +51,7 @@
             var confirmResult = MessageBox.Show($"Confirmez-vous la suppression du matériel: ... ?", "confirmation", MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
-                _db.DeleteMaterielAsync(TXTname.Text, NUDmatNumber.Value);
+                // _db.DeleteMaterielAsync();
             }
         }
 
@@ -59,4 +59,22 @@
         {
 
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            //IEnumerable<Materiel> materials =  _db.GetMaterialsAsync();
+            // Assigne les données récupérées à au DataGridView (des matériels)
+            //  DGVmat.DataSource = materials;
+        }
+
+        private void TLPmat_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tlPInput_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
+}

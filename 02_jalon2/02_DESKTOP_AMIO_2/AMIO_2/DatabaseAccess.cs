@@ -72,14 +72,14 @@ namespace AMIO_2
         /// <param name="newProprietaireId">The new owner ID to be updated.</param>
         /// <returns>The number of rows affected by the update operation.</returns>
         #region CRUD-update
-        public int updateMaterial(string oldName, DateTime oldServiceDat, DateTime oldEndGarantee, int oldProprietaireId, string newName, DateTime newServiceDat, DateTime newEndGarantee, int newProprietaireId)
+        public int updateMaterial(string oldName, DateTime oldServiceDat, DateTime oldEndGarantee, string newName, DateTime newServiceDat, DateTime newEndGarantee)
         {
             try
             {
                 _dbconnection.Open();
                 var updateQuery = "UPDATE materiel SET name = @newName," +
                     "serviceDat= @newServiceDat,endGarntee=@newEndGarantee, propriétaireId=@propriétaireId WHERE id = @oldProprietaireId where id=oldProprietaireId;";
-                return _dbconnection.Execute(updateQuery, new { newName, newServiceDat, newEndGarantee, newProprietaireId });
+                return _dbconnection.Execute(updateQuery, new { newName, newServiceDat, newEndGarantee });
 
             }
             finally
