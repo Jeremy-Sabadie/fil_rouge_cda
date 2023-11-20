@@ -31,6 +31,9 @@ CREATE TABLE IF NOT EXISTS  category (
   FOREIGN KEY (refCat) REFERENCES category(ref),
   FOREIGN KEY (idMat) REFERENCES materiel(id)
  );
+  --===========================================================================
+ ALTER TABLE filrouge.category CHANGE `ref` reference int(11) NOT NULL;
+
   
       --===========================================================================
    -- PEUPLEMENT DE LA TABLE MATERIEL AVEC 4 ELEMENTS:

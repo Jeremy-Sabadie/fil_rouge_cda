@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\fil_rouge_api.props" />
-</Project>
