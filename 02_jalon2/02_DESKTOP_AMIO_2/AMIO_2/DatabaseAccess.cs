@@ -115,6 +115,23 @@ namespace AMIO_2
 
 
             #endregion
+
+        }
+        // Function to retrive all the categories to be integrated into the combobox choice. 
+        public async Task<IEnumerable<Category>> GetCategoriesAsync()
+        {
+            try
+            {
+                await _dbconnection.OpenAsync();
+                string selectAllCategoryQuery = "select name from category";
+                return await _dbconnection.QueryAsync<Category>(selectAllCategoryQuery);
+
+            }
+
+            finally
+            {
+                _dbconnection.Close();
+            }
         }
     }
 }

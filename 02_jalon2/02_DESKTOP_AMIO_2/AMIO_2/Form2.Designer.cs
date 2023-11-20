@@ -49,17 +49,11 @@
             LBownerName = new Label();
             TXTowner = new TextBox();
             LBfltrNameMat = new Label();
-            LBfltrDTserv = new Label();
-            LBfltrEndgarantee = new Label();
-            LNfltrOwnerName = new Label();
-            TXTfltrMatName = new TextBox();
-            DTPfltrServiceDat = new DateTimePicker();
-            DTPfltrEndDat = new DateTimePicker();
-            TXTfltrOwnerName = new TextBox();
             tableLayoutPanel2 = new TableLayoutPanel();
             LBfiltrBy = new Label();
             LBmodif = new Label();
             bindingSourceMateriel = new BindingSource(components);
+            CBcategory = new ComboBox();
             TLPmat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DGVmat).BeginInit();
             tableLayoutPanel1.SuspendLayout();
@@ -172,7 +166,7 @@
             BTfiltre.Location = new Point(821, 20);
             BTfiltre.Margin = new Padding(17, 20, 17, 20);
             BTfiltre.Name = "BTfiltre";
-            BTfiltre.Size = new Size(254, 61);
+            BTfiltre.Size = new Size(267, 61);
             BTfiltre.TabIndex = 4;
             BTfiltre.Text = "APPLIQUER LE FILTRE";
             BTfiltre.TextAlign = ContentAlignment.TopCenter;
@@ -218,13 +212,7 @@
             tlPInput.Controls.Add(LBownerName, 0, 3);
             tlPInput.Controls.Add(TXTowner, 1, 3);
             tlPInput.Controls.Add(LBfltrNameMat, 2, 0);
-            tlPInput.Controls.Add(LBfltrDTserv, 2, 1);
-            tlPInput.Controls.Add(LBfltrEndgarantee, 2, 2);
-            tlPInput.Controls.Add(LNfltrOwnerName, 2, 3);
-            tlPInput.Controls.Add(TXTfltrMatName, 3, 0);
-            tlPInput.Controls.Add(DTPfltrServiceDat, 3, 1);
-            tlPInput.Controls.Add(DTPfltrEndDat, 3, 2);
-            tlPInput.Controls.Add(TXTfltrOwnerName, 3, 3);
+            tlPInput.Controls.Add(CBcategory, 3, 0);
             tlPInput.Location = new Point(0, 4);
             tlPInput.Margin = new Padding(0, 4, 3, 4);
             tlPInput.Name = "tlPInput";
@@ -321,73 +309,12 @@
             // 
             LBfltrNameMat.Anchor = AnchorStyles.Right;
             LBfltrNameMat.AutoSize = true;
-            LBfltrNameMat.Location = new Point(706, 17);
+            LBfltrNameMat.Location = new Point(667, 17);
             LBfltrNameMat.Name = "LBfltrNameMat";
-            LBfltrNameMat.Size = new Size(171, 30);
+            LBfltrNameMat.Size = new Size(210, 30);
             LBfltrNameMat.TabIndex = 10;
-            LBfltrNameMat.Text = " nom de matériel";
-            // 
-            // LBfltrDTserv
-            // 
-            LBfltrDTserv.Anchor = AnchorStyles.Right;
-            LBfltrDTserv.AutoSize = true;
-            LBfltrDTserv.Location = new Point(647, 81);
-            LBfltrDTserv.Name = "LBfltrDTserv";
-            LBfltrDTserv.Size = new Size(230, 30);
-            LBfltrDTserv.TabIndex = 11;
-            LBfltrDTserv.Text = "date de mise en service";
-            // 
-            // LBfltrEndgarantee
-            // 
-            LBfltrEndgarantee.Anchor = AnchorStyles.Right;
-            LBfltrEndgarantee.AutoSize = true;
-            LBfltrEndgarantee.Location = new Point(653, 145);
-            LBfltrEndgarantee.Name = "LBfltrEndgarantee";
-            LBfltrEndgarantee.Size = new Size(224, 30);
-            LBfltrEndgarantee.TabIndex = 12;
-            LBfltrEndgarantee.Text = "date de fin de garantie";
-            // 
-            // LNfltrOwnerName
-            // 
-            LNfltrOwnerName.Anchor = AnchorStyles.Right;
-            LNfltrOwnerName.AutoSize = true;
-            LNfltrOwnerName.Location = new Point(680, 209);
-            LNfltrOwnerName.Name = "LNfltrOwnerName";
-            LNfltrOwnerName.Size = new Size(197, 30);
-            LNfltrOwnerName.TabIndex = 13;
-            LNfltrOwnerName.Text = "nom de propriétaire";
-            // 
-            // TXTfltrMatName
-            // 
-            TXTfltrMatName.Dock = DockStyle.Fill;
-            TXTfltrMatName.Location = new Point(883, 3);
-            TXTfltrMatName.Margin = new Padding(3, 3, 3, 30);
-            TXTfltrMatName.Name = "TXTfltrMatName";
-            TXTfltrMatName.Size = new Size(366, 35);
-            TXTfltrMatName.TabIndex = 14;
-            // 
-            // DTPfltrServiceDat
-            // 
-            DTPfltrServiceDat.Dock = DockStyle.Fill;
-            DTPfltrServiceDat.Location = new Point(883, 67);
-            DTPfltrServiceDat.Name = "DTPfltrServiceDat";
-            DTPfltrServiceDat.Size = new Size(366, 35);
-            DTPfltrServiceDat.TabIndex = 15;
-            // 
-            // DTPfltrEndDat
-            // 
-            DTPfltrEndDat.Location = new Point(883, 131);
-            DTPfltrEndDat.Name = "DTPfltrEndDat";
-            DTPfltrEndDat.Size = new Size(215, 35);
-            DTPfltrEndDat.TabIndex = 16;
-            // 
-            // TXTfltrOwnerName
-            // 
-            TXTfltrOwnerName.Dock = DockStyle.Fill;
-            TXTfltrOwnerName.Location = new Point(883, 195);
-            TXTfltrOwnerName.Name = "TXTfltrOwnerName";
-            TXTfltrOwnerName.Size = new Size(366, 35);
-            TXTfltrOwnerName.TabIndex = 17;
+            LBfltrNameMat.Text = "catégorie du matériel";
+            LBfltrNameMat.Click += LBfltrNameMat_Click;
             // 
             // tableLayoutPanel2
             // 
@@ -427,6 +354,14 @@
             LBmodif.TabIndex = 0;
             LBmodif.Text = "MODIFIER LES MATERIELS";
             LBmodif.TextAlign = ContentAlignment.BottomCenter;
+            // 
+            // CBcategory
+            // 
+            CBcategory.FormattingEnabled = true;
+            CBcategory.Location = new Point(883, 3);
+            CBcategory.Name = "CBcategory";
+            CBcategory.Size = new Size(212, 38);
+            CBcategory.TabIndex = 11;
             // 
             // Form2
             // 
@@ -471,16 +406,10 @@
         private TableLayoutPanel tableLayoutPanel1;
         private Button BTfiltre;
         private Label LBownerName;
-        private Label LBfltrDTserv;
-        private Label LBfltrEndgarantee;
         private Label LBfltrNameMat;
-        private Label LNfltrOwnerName;
         private TableLayoutPanel tableLayoutPanel2;
         private Label LBmodif;
         private Label LBfiltrBy;
-        private TextBox TXTfltrMatName;
-        private DateTimePicker DTPfltrServiceDat;
-        private DateTimePicker DTPfltrEndDat;
-        private TextBox TXTfltrOwnerName;
+        private ComboBox CBcategory;
     }
 }

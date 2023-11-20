@@ -1,55 +1,43 @@
 
-
-
-
-    USE filrouge;
-      --===========================================================================
-   -- CREATION OF THE :
-   -- ===========================================================================
--- TABLE MATERIEL:
-  
-CREATE TABLE IF NOT EXISTS materiel (
+--DATABASE SCRIPT CREATION:
+USING filrouge
+-- TABLE MATERIEL:  
+CREATE TABLEIF NOT EXISTS materiel (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     serviceDat datetime,
     endGarantee datetime,
-
+    
     proprietaireId bigint(20) unsigned,
     FOREIGN KEY (proprietaireId) REFERENCES users(id)
 );
---=====================================================
---TABLE GATEGORY:
-CREATE TABLE IF NOT EXISTS  category (
-    ref INT PRIMARY KEY,
-    name VARCHAR(50) NOT NULL
+ --===========================================================================
+   -- PEUPLEMENT DE LA TABLE MATERIEL AVEC 4 ELEMENTS:
+INSERT INTO materiel (name, serviceDat, endGarantee, proprietaireId) VALUES 
+('Ordinateur portable', '2023-01-01', '2025-01-01', 1),
+('Imprimante', '2022-05-15', '2024-05-15', 2),
+('Projecteur', '2023-03-10', '2025-03-10', 3),
+('Casque audio', '2023-07-20', '2025-07-20', 4),
+('Écran LCD', '2022-12-10', '2024-12-10', 5);
+ -- ===========================================================================
+--  Cette instruction sql crée une table appelée category:
+CREATE TABLE IF NOT EXISTS category (
+  reference INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  PRIMARY KEY (categoryID)
 );
---=====================================================
--- TABLE CATEGORYMATERIEL:
- create TABLE IF NOT EXISTS  CategoryMateriel(
-  refCat int,
-  idMat int,
+--===========================================================================
+   -- PEUPLEMENT DE LA TABLE MATERIEL AVEC 4 ELEMENTS:
+INSERT INTO category (reference, name) VALUES (1, 'Laptops');
+INSERT INTO category (reference, name) VALUES (2, 'Desktops');
+INSERT INTO category (reference, name) VALUES (3, 'Servers');
+INSERT INTO category (reference, name) VALUES (4, 'Network Equipment');
+-- ================================================================================
+-- TABLE DE LIAISON CATEGORYMATERIEL:
+ create table IF NOT EXISTS CategoryMateriel(
+  refCat bigint(20) unsigned,
+  idMat bigint(20) unsigned,
   FOREIGN KEY (refCat) REFERENCES category(ref),
   FOREIGN KEY (idMat) REFERENCES materiel(id)
- );
-  --===========================================================================
- ALTER TABLE filrouge.category CHANGE `ref` reference int(11) NOT NULL;
-
-  
-      --===========================================================================
-   -- PEUPLEMENT DE LA TABLE MATERIEL AVEC 4 ELEMENTS:
-   -- ===========================================================================
-INSERT INTO materiel (name, serviceDat, endGarantee, proprietaireId) 
-VALUES 
-('Ordinateur portable', '2023-01-15', '2025-01-15', 1),
-('Imprimante', '2023-02-20', '2024-02-20', 2),
-('Projecteur', '2023-03-10', '2025-03-10', 1),
-('Écran LCD', '2023-04-05', '2024-04-05', 3);
-    --===========================================================================
-   -- PEUPLEMENT DE LA TABLE CATEGORY AVEC 4 ELEMENTS:
-   -- ===========================================================================
-INSERT INTO category (ref, name)
-VALUES 
-(1, 'Électronique'),
-(2, 'Mobilier'),
-(3, 'Outils'),
-(4, 'Accessoires');
+ );  
+-- ==============================================================================================================================================
