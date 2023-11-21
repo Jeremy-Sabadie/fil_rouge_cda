@@ -14,4 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AMIO_2
-build_property.ProjectDir = C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\
+build_property.ProjectDir = C:\Users\cda07saba\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

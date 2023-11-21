@@ -245,3 +245,5 @@ C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\bin\Debu
 C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.csproj.CopyComplete
 C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.genruntimeconfig.cache
 C:\Users\Admin\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\ref\AMIO_2.dll
+C:\Users\cda07saba\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.Properties.Resources.resources
+C:\Users\cda07saba\Desktop\fil_rouge_cda\02_jalon2\02_DESKTOP_AMIO_2\AMIO_2\obj\Debug\net6.0-windows\AMIO_2.sourcelink.json
