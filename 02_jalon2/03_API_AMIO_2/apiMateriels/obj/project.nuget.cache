@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "xuX/ZrKjyXQXz9ZE85PTK2UkN7OXyRYha45A6VkWHw3WfmMMqTOM8qWs+FNWM9KU8WMPWPAPwNIFGqBbejSULg==",
+  "dgSpecHash": "XA0Uoc7+N1Xps6o5CsmIWIFQx9TGYRx5PUpaooRWK4MLPyZiZ0clM97kfNMWamWlcZa6rpS2jDglxxChNDuN5Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\cda07saba\\Desktop\\fil_rouge_cda\\02_jalon2\\03_API_AMIO_2\\apiMateriels\\apiMateriels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cda07saba\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\cda07saba\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\cda07saba\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "C:\\Users\\cda07saba\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\cda07saba\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\cda07saba\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
