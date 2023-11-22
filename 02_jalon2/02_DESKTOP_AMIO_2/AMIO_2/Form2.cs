@@ -1,12 +1,16 @@
-﻿namespace AMIO_2
+﻿using System.ComponentModel;
+
+namespace AMIO_2
 {
     public partial class Form2 : Form
     {
         DatabaseAccess _db = new();
+        BindingList<Materiel> _materiels = new();
+        BindingList<User> _User = new();
         public Form2()
         {
             InitializeComponent();
-
+            InitializeBinding();
 
         }
 
@@ -78,6 +82,22 @@
         }
 
         private void LBfltrNameMat_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void InitializeBinding()
+        {
+
+            BSmateriel.DataSource = _materiels;
+            BSuser.DataSource = _User;
+            DGVmat.DataSource = BSmateriel;
+            TXTname.DataBindings.Add("text", BSmateriel, "name", false, DataSourceUpdateMode.Never);
+            TXTowner.DataBindings.Add("text", BSuser, "Name", false, DataSourceUpdateMode.Never);
+            //DTPendGarantee.DataBindings.Add("Value", BSmateriel, "endGarantee");
+            //DTPservDat.DataBindings.Add("Value", BSmateriel, "serviceDat");
+        }
+
+        private void DTPservDat_ValueChanged(object sender, EventArgs e)
         {
 
         }

@@ -50,13 +50,13 @@
             TLPMain.Controls.Add(BTvalid, 0, 1);
             TLPMain.Dock = DockStyle.Fill;
             TLPMain.Location = new Point(0, 0);
-            TLPMain.Margin = new Padding(3, 4, 3, 4);
+            TLPMain.Margin = new Padding(2);
             TLPMain.Name = "TLPMain";
             TLPMain.RowCount = 3;
             TLPMain.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            TLPMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 180F));
-            TLPMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            TLPMain.Size = new Size(801, 450);
+            TLPMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 90F));
+            TLPMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 10F));
+            TLPMain.Size = new Size(467, 225);
             TLPMain.TabIndex = 0;
             // 
             // TLPformConnection
@@ -69,8 +69,8 @@
             TLPformConnection.Controls.Add(textBox1, 1, 2);
             TLPformConnection.Controls.Add(LBid, 1, 1);
             TLPformConnection.Controls.Add(LBconnection, 1, 0);
-            TLPformConnection.Location = new Point(206, 4);
-            TLPformConnection.Margin = new Padding(206, 4, 3, 4);
+            TLPformConnection.Location = new Point(120, 2);
+            TLPformConnection.Margin = new Padding(120, 2, 2, 2);
             TLPformConnection.Name = "TLPformConnection";
             TLPformConnection.RowCount = 5;
             TLPformConnection.RowStyles.Add(new RowStyle(SizeType.Percent, 26.44628F));
@@ -78,25 +78,26 @@
             TLPformConnection.RowStyles.Add(new RowStyle(SizeType.Percent, 19.00826F));
             TLPformConnection.RowStyles.Add(new RowStyle(SizeType.Percent, 14.34426F));
             TLPformConnection.RowStyles.Add(new RowStyle(SizeType.Percent, 19.26229F));
-            TLPformConnection.Size = new Size(379, 224);
+            TLPformConnection.Size = new Size(221, 112);
             TLPformConnection.TabIndex = 0;
             // 
             // TXTpassword
             // 
             TXTpassword.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            TXTpassword.Location = new Point(17, 182);
-            TXTpassword.Margin = new Padding(3, 4, 3, 4);
+            TXTpassword.Location = new Point(10, 90);
+            TXTpassword.Margin = new Padding(2);
             TXTpassword.Name = "TXTpassword";
-            TXTpassword.Size = new Size(359, 35);
+            TXTpassword.Size = new Size(209, 23);
             TXTpassword.TabIndex = 5;
             // 
             // LBpassword
             // 
             LBpassword.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             LBpassword.AutoSize = true;
-            LBpassword.Location = new Point(17, 148);
+            LBpassword.Location = new Point(10, 73);
+            LBpassword.Margin = new Padding(2, 0, 2, 0);
             LBpassword.Name = "LBpassword";
-            LBpassword.Size = new Size(359, 30);
+            LBpassword.Size = new Size(209, 15);
             LBpassword.TabIndex = 1;
             LBpassword.Text = "Mot de passe";
             LBpassword.TextAlign = ContentAlignment.BottomCenter;
@@ -104,19 +105,20 @@
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Location = new Point(17, 113);
-            textBox1.Margin = new Padding(3, 10, 3, 4);
+            textBox1.Location = new Point(10, 56);
+            textBox1.Margin = new Padding(2, 5, 2, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(359, 35);
+            textBox1.Size = new Size(209, 23);
             textBox1.TabIndex = 2;
             // 
             // LBid
             // 
             LBid.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             LBid.AutoSize = true;
-            LBid.Location = new Point(17, 73);
+            LBid.Location = new Point(10, 36);
+            LBid.Margin = new Padding(2, 0, 2, 0);
             LBid.Name = "LBid";
-            LBid.Size = new Size(359, 30);
+            LBid.Size = new Size(209, 15);
             LBid.TabIndex = 0;
             LBid.Text = "email";
             LBid.TextAlign = ContentAlignment.BottomCenter;
@@ -125,10 +127,10 @@
             // 
             LBconnection.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             LBconnection.AutoSize = true;
-            LBconnection.Location = new Point(17, 30);
-            LBconnection.Margin = new Padding(3, 30, 3, 0);
+            LBconnection.Location = new Point(10, 15);
+            LBconnection.Margin = new Padding(2, 15, 2, 0);
             LBconnection.Name = "LBconnection";
-            LBconnection.Size = new Size(359, 29);
+            LBconnection.Size = new Size(209, 14);
             LBconnection.TabIndex = 4;
             LBconnection.Text = "CONNECTION";
             LBconnection.TextAlign = ContentAlignment.MiddleCenter;
@@ -136,18 +138,18 @@
             // textBox2
             // 
             textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox2.Location = new Point(3, 460);
-            textBox2.Margin = new Padding(3, 30, 3, 4);
+            textBox2.Location = new Point(2, 230);
+            textBox2.Margin = new Padding(2, 15, 2, 2);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(795, 35);
+            textBox2.Size = new Size(463, 23);
             textBox2.TabIndex = 3;
             // 
             // BTvalid
             // 
-            BTvalid.Location = new Point(309, 270);
-            BTvalid.Margin = new Padding(309, 20, 3, 4);
+            BTvalid.Location = new Point(180, 135);
+            BTvalid.Margin = new Padding(180, 10, 2, 2);
             BTvalid.Name = "BTvalid";
-            BTvalid.Size = new Size(130, 58);
+            BTvalid.Size = new Size(76, 29);
             BTvalid.TabIndex = 1;
             BTvalid.Text = "VALIDER";
             BTvalid.UseVisualStyleBackColor = true;
@@ -155,11 +157,11 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(801, 450);
+            ClientSize = new Size(467, 225);
             Controls.Add(TLPMain);
-            Margin = new Padding(3, 4, 3, 4);
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "Connection";
             TLPMain.ResumeLayout(false);

@@ -133,6 +133,51 @@ namespace AMIO_2
                 _dbconnection.Close();
             }
         }
+        public async Task<IEnumerable<Materiel>> GetAllMaterielsAsync()
+        {
+            try
+            {
+                await _dbconnection.OpenAsync();
+                string selectAllMaterielsQuery = "select * from materiel";
+                return await _dbconnection.QueryAsync<Materiel>(selectAllMaterielsQuery);
+
+            }
+
+            finally
+            {
+                _dbconnection.Close();
+            }
+        }
+        public async Task<IEnumerable<Category>> GetAllCategoriesAsync()
+        {
+            try
+            {
+                await _dbconnection.OpenAsync();
+                string selectAllCategoriesQuery = "select * from category";
+                return await _dbconnection.QueryAsync<Category>(selectAllCategoriesQuery);
+
+            }
+
+            finally
+            {
+                _dbconnection.Close();
+            }
+        }
+        public async Task<IEnumerable<User>> GetAllUsersAsync()
+        {
+            try
+            {
+                await _dbconnection.OpenAsync();
+                string selectAllUsersQuery = "select * from users";
+                return await _dbconnection.QueryAsync<User>(selectAllUsersQuery);
+
+            }
+
+            finally
+            {
+                _dbconnection.Close();
+            }
+        }
     }
 }
 

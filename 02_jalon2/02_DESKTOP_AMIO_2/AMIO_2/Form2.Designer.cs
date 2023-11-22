@@ -36,7 +36,6 @@
             BTupdate = new Button();
             BTread = new Button();
             BTcreate = new Button();
-            BTfiltre = new Button();
             BTdellete = new Button();
             FLPcontainerCRUD = new FlowLayoutPanel();
             tlPInput = new TableLayoutPanel();
@@ -44,22 +43,24 @@
             LBmatName = new Label();
             DTPservDat = new DateTimePicker();
             LBgserviceDat = new Label();
-            LBfltrNameMat = new Label();
+            DTPendGarantee = new DateTimePicker();
+            LBendGarantee = new Label();
+            LBownerName = new Label();
+            TXTowner = new TextBox();
             CBcategory = new ComboBox();
+            LBfltrNameMat = new Label();
             tableLayoutPanel2 = new TableLayoutPanel();
             LBmodif = new Label();
-            bindingSourceMateriel = new BindingSource(components);
-            LBendGarantee = new Label();
-            DTPendGarantee = new DateTimePicker();
-            TXTowner = new TextBox();
-            LBownerName = new Label();
+            BSmateriel = new BindingSource(components);
+            BSuser = new BindingSource(components);
             TLPmat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DGVmat).BeginInit();
             tableLayoutPanel1.SuspendLayout();
             FLPcontainerCRUD.SuspendLayout();
             tlPInput.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)bindingSourceMateriel).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BSmateriel).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BSuser).BeginInit();
             SuspendLayout();
             // 
             // TLPmat
@@ -72,7 +73,7 @@
             TLPmat.Controls.Add(tableLayoutPanel2, 0, 1);
             TLPmat.Dock = DockStyle.Fill;
             TLPmat.Location = new Point(0, 0);
-            TLPmat.Margin = new Padding(2, 2, 2, 2);
+            TLPmat.Margin = new Padding(2);
             TLPmat.Name = "TLPmat";
             TLPmat.RowCount = 4;
             TLPmat.RowStyles.Add(new RowStyle(SizeType.Percent, 22.41379F));
@@ -87,7 +88,7 @@
             // 
             DGVmat.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DGVmat.Location = new Point(2, 2);
-            DGVmat.Margin = new Padding(2, 2, 2, 2);
+            DGVmat.Margin = new Padding(2);
             DGVmat.Name = "DGVmat";
             DGVmat.RowHeadersWidth = 72;
             DGVmat.RowTemplate.Height = 37;
@@ -106,7 +107,6 @@
             tableLayoutPanel1.Controls.Add(BTupdate, 2, 0);
             tableLayoutPanel1.Controls.Add(BTread, 1, 0);
             tableLayoutPanel1.Controls.Add(BTcreate, 0, 0);
-            tableLayoutPanel1.Controls.Add(BTfiltre, 4, 0);
             tableLayoutPanel1.Controls.Add(BTdellete, 3, 0);
             tableLayoutPanel1.Location = new Point(55, 401);
             tableLayoutPanel1.Margin = new Padding(55, 2, 2, 2);
@@ -118,12 +118,12 @@
             // 
             // BTupdate
             // 
-            BTupdate.Image = Properties.Resources.refresh_arrow_15461;
+            BTupdate.Image = (Image)resources.GetObject("BTupdate.Image");
             BTupdate.ImageAlign = ContentAlignment.BottomCenter;
             BTupdate.Location = new Point(246, 10);
-            BTupdate.Margin = new Padding(10, 10, 10, 10);
+            BTupdate.Margin = new Padding(10);
             BTupdate.Name = "BTupdate";
-            BTupdate.Size = new Size(58, 30);
+            BTupdate.Size = new Size(91, 40);
             BTupdate.TabIndex = 2;
             BTupdate.Text = "UPDATE";
             BTupdate.TextAlign = ContentAlignment.TopCenter;
@@ -132,12 +132,12 @@
             // 
             // BTread
             // 
-            BTread.Image = Properties.Resources.read;
+            BTread.Image = (Image)resources.GetObject("BTread.Image");
             BTread.ImageAlign = ContentAlignment.BottomCenter;
             BTread.Location = new Point(121, 10);
-            BTread.Margin = new Padding(10, 10, 10, 10);
+            BTread.Margin = new Padding(10);
             BTread.Name = "BTread";
-            BTread.Size = new Size(58, 30);
+            BTread.Size = new Size(91, 40);
             BTread.TabIndex = 1;
             BTread.Text = "READ";
             BTread.TextAlign = ContentAlignment.TopCenter;
@@ -146,39 +146,26 @@
             // 
             // BTcreate
             // 
-            BTcreate.Image = Properties.Resources.create;
+            BTcreate.Image = (Image)resources.GetObject("BTcreate.Image");
             BTcreate.ImageAlign = ContentAlignment.BottomCenter;
             BTcreate.Location = new Point(10, 10);
-            BTcreate.Margin = new Padding(10, 10, 10, 10);
+            BTcreate.Margin = new Padding(10);
             BTcreate.Name = "BTcreate";
-            BTcreate.Size = new Size(58, 30);
+            BTcreate.Size = new Size(91, 40);
             BTcreate.TabIndex = 0;
             BTcreate.Text = "CREATE";
             BTcreate.TextAlign = ContentAlignment.TopCenter;
             BTcreate.UseVisualStyleBackColor = true;
             BTcreate.Click += BTcreate_Click;
             // 
-            // BTfiltre
-            // 
-            BTfiltre.Image = (Image)resources.GetObject("BTfiltre.Image");
-            BTfiltre.ImageAlign = ContentAlignment.BottomCenter;
-            BTfiltre.Location = new Point(478, 10);
-            BTfiltre.Margin = new Padding(10, 10, 10, 10);
-            BTfiltre.Name = "BTfiltre";
-            BTfiltre.Size = new Size(156, 30);
-            BTfiltre.TabIndex = 4;
-            BTfiltre.Text = "APPLIQUER LE FILTRE";
-            BTfiltre.TextAlign = ContentAlignment.TopCenter;
-            BTfiltre.UseVisualStyleBackColor = true;
-            // 
             // BTdellete
             // 
             BTdellete.Image = (Image)resources.GetObject("BTdellete.Image");
             BTdellete.ImageAlign = ContentAlignment.BottomCenter;
             BTdellete.Location = new Point(367, 10);
-            BTdellete.Margin = new Padding(10, 10, 10, 10);
+            BTdellete.Margin = new Padding(10);
             BTdellete.Name = "BTdellete";
-            BTdellete.Size = new Size(58, 30);
+            BTdellete.Size = new Size(91, 40);
             BTdellete.TabIndex = 3;
             BTdellete.Text = "DELETE";
             BTdellete.TextAlign = ContentAlignment.TopCenter;
@@ -190,7 +177,7 @@
             FLPcontainerCRUD.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             FLPcontainerCRUD.Controls.Add(tlPInput);
             FLPcontainerCRUD.Location = new Point(2, 237);
-            FLPcontainerCRUD.Margin = new Padding(2, 2, 2, 2);
+            FLPcontainerCRUD.Margin = new Padding(2);
             FLPcontainerCRUD.Name = "FLPcontainerCRUD";
             FLPcontainerCRUD.Size = new Size(728, 156);
             FLPcontainerCRUD.TabIndex = 1;
@@ -227,7 +214,7 @@
             // 
             TXTname.Dock = DockStyle.Fill;
             TXTname.Location = new Point(161, 2);
-            TXTname.Margin = new Padding(2, 2, 2, 2);
+            TXTname.Margin = new Padding(2);
             TXTname.Name = "TXTname";
             TXTname.Size = new Size(428, 23);
             TXTname.TabIndex = 4;
@@ -247,10 +234,11 @@
             // 
             DTPservDat.Dock = DockStyle.Fill;
             DTPservDat.Location = new Point(161, 38);
-            DTPservDat.Margin = new Padding(2, 2, 2, 2);
+            DTPservDat.Margin = new Padding(2);
             DTPservDat.Name = "DTPservDat";
             DTPservDat.Size = new Size(428, 23);
             DTPservDat.TabIndex = 6;
+            DTPservDat.ValueChanged += DTPservDat_ValueChanged;
             // 
             // LBgserviceDat
             // 
@@ -262,6 +250,58 @@
             LBgserviceDat.Size = new Size(129, 15);
             LBgserviceDat.TabIndex = 2;
             LBgserviceDat.Text = "date de mise en service";
+            // 
+            // DTPendGarantee
+            // 
+            DTPendGarantee.Dock = DockStyle.Fill;
+            DTPendGarantee.Location = new Point(161, 74);
+            DTPendGarantee.Margin = new Padding(2);
+            DTPendGarantee.Name = "DTPendGarantee";
+            DTPendGarantee.Size = new Size(428, 23);
+            DTPendGarantee.TabIndex = 7;
+            // 
+            // LBendGarantee
+            // 
+            LBendGarantee.Anchor = AnchorStyles.Left;
+            LBendGarantee.AutoSize = true;
+            LBendGarantee.Location = new Point(2, 82);
+            LBendGarantee.Margin = new Padding(2, 0, 2, 0);
+            LBendGarantee.Name = "LBendGarantee";
+            LBendGarantee.Size = new Size(125, 15);
+            LBendGarantee.TabIndex = 3;
+            LBendGarantee.Text = "date de fin de garantie";
+            // 
+            // LBownerName
+            // 
+            LBownerName.Anchor = AnchorStyles.Left;
+            LBownerName.AutoSize = true;
+            LBownerName.Location = new Point(2, 120);
+            LBownerName.Margin = new Padding(2, 0, 2, 0);
+            LBownerName.Name = "LBownerName";
+            LBownerName.Size = new Size(113, 15);
+            LBownerName.TabIndex = 9;
+            LBownerName.Text = "nom du propriétaire";
+            LBownerName.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // TXTowner
+            // 
+            TXTowner.AcceptsReturn = true;
+            TXTowner.Dock = DockStyle.Fill;
+            TXTowner.Location = new Point(161, 110);
+            TXTowner.Margin = new Padding(2);
+            TXTowner.Name = "TXTowner";
+            TXTowner.Size = new Size(428, 23);
+            TXTowner.TabIndex = 5;
+            TXTowner.TextChanged += TXTowner_TextChanged;
+            // 
+            // CBcategory
+            // 
+            CBcategory.FormattingEnabled = true;
+            CBcategory.Location = new Point(593, 38);
+            CBcategory.Margin = new Padding(2);
+            CBcategory.Name = "CBcategory";
+            CBcategory.Size = new Size(125, 23);
+            CBcategory.TabIndex = 11;
             // 
             // LBfltrNameMat
             // 
@@ -275,15 +315,6 @@
             LBfltrNameMat.Text = "catégorie du matériel";
             LBfltrNameMat.Click += LBfltrNameMat_Click;
             // 
-            // CBcategory
-            // 
-            CBcategory.FormattingEnabled = true;
-            CBcategory.Location = new Point(593, 38);
-            CBcategory.Margin = new Padding(2, 2, 2, 2);
-            CBcategory.Name = "CBcategory";
-            CBcategory.Size = new Size(125, 23);
-            CBcategory.TabIndex = 11;
-            // 
             // tableLayoutPanel2
             // 
             tableLayoutPanel2.ColumnCount = 2;
@@ -292,7 +323,7 @@
             tableLayoutPanel2.Controls.Add(LBmodif, 0, 0);
             tableLayoutPanel2.Dock = DockStyle.Fill;
             tableLayoutPanel2.Location = new Point(2, 91);
-            tableLayoutPanel2.Margin = new Padding(2, 2, 2, 2);
+            tableLayoutPanel2.Margin = new Padding(2);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -311,56 +342,13 @@
             LBmodif.Text = "MODIFIER LES MATERIELS";
             LBmodif.TextAlign = ContentAlignment.BottomCenter;
             // 
-            // LBendGarantee
-            // 
-            LBendGarantee.Anchor = AnchorStyles.Left;
-            LBendGarantee.AutoSize = true;
-            LBendGarantee.Location = new Point(2, 82);
-            LBendGarantee.Margin = new Padding(2, 0, 2, 0);
-            LBendGarantee.Name = "LBendGarantee";
-            LBendGarantee.Size = new Size(125, 15);
-            LBendGarantee.TabIndex = 3;
-            LBendGarantee.Text = "date de fin de garantie";
-            // 
-            // DTPendGarantee
-            // 
-            DTPendGarantee.Dock = DockStyle.Fill;
-            DTPendGarantee.Location = new Point(161, 74);
-            DTPendGarantee.Margin = new Padding(2);
-            DTPendGarantee.Name = "DTPendGarantee";
-            DTPendGarantee.Size = new Size(428, 23);
-            DTPendGarantee.TabIndex = 7;
-            // 
-            // TXTowner
-            // 
-            TXTowner.AcceptsReturn = true;
-            TXTowner.Dock = DockStyle.Fill;
-            TXTowner.Location = new Point(161, 110);
-            TXTowner.Margin = new Padding(2);
-            TXTowner.Name = "TXTowner";
-            TXTowner.Size = new Size(428, 23);
-            TXTowner.TabIndex = 5;
-            TXTowner.TextChanged += TXTowner_TextChanged;
-            // 
-            // LBownerName
-            // 
-            LBownerName.Anchor = AnchorStyles.Left;
-            LBownerName.AutoSize = true;
-            LBownerName.Location = new Point(2, 120);
-            LBownerName.Margin = new Padding(2, 0, 2, 0);
-            LBownerName.Name = "LBownerName";
-            LBownerName.Size = new Size(113, 15);
-            LBownerName.TabIndex = 9;
-            LBownerName.Text = "nom du propriétaire";
-            LBownerName.TextAlign = ContentAlignment.MiddleRight;
-            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(732, 464);
             Controls.Add(TLPmat);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Form2";
             Text = "Materiel";
             Load += Form2_Load;
@@ -372,7 +360,8 @@
             tlPInput.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)bindingSourceMateriel).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BSmateriel).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BSuser).EndInit();
             ResumeLayout(false);
         }
 
@@ -385,14 +374,12 @@
         private Button BTread;
         private Button BTupdate;
         private Button BTdellete;
-        private BindingSource bindingSourceMateriel;
         private TableLayoutPanel tlPInput;
         private Label LBmatName;
         private Label LBgserviceDat;
         private TextBox TXTname;
         private DateTimePicker DTPservDat;
         private TableLayoutPanel tableLayoutPanel1;
-        private Button BTfiltre;
         private Label LBfltrNameMat;
         private TableLayoutPanel tableLayoutPanel2;
         private Label LBmodif;
@@ -401,5 +388,7 @@
         private Label LBendGarantee;
         private Label LBownerName;
         private TextBox TXTowner;
+        private BindingSource BSmateriel;
+        private BindingSource BSuser;
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AMIO_2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31231d7d96633b8c7eb742b1fd3938ca92c7463d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+929981f4a0a8326e60162c2fd1726568b96ab0f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("AMIO_2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AMIO_2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
