@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using domain.Entities;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -10,7 +11,7 @@ namespace apiMateriels.Controllers
     {
         //POST->Création:
         [HttpPost()]
-        public async Task<IActionResult> CreateBook([FromBody] Book book)
+        public async Task<IActionResult> CreateMateriel([FromBody] Materiel materiel)
         {
             //verifier
             if (book.Title != null && book.Autor != null)
