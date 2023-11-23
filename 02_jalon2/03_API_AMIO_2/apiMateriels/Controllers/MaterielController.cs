@@ -9,82 +9,102 @@ namespace apiMateriels.Controllers
     [ApiController]
     public class MaterielController : ControllerBase
     {
-        //POST->Création:
+        //POST->Création materiel:
+        #region post materiel
         [HttpPost()]
         public async Task<IActionResult> CreateMateriel([FromBody] Materiel materiel)
         {
-            //verifier
-            if (book.Title != null && book.Autor != null)
+            //verification:
+            if (materiel.Name != null && materiel.ServiceDat != null && materiel.EndGarantee != null)
             {
-                //faire
-                Book newbook = new(5, book.Title, book.Autor);
-                Book.books.Add(newbook);
-                //repondre
-                return Ok(newbook);
+
+
+
+                Materiel newmaterial = new(materiel.Name, materiel.ServiceDat, materiel.EndGarantee);
+                //Ajout dant la liste des matériels:
+                Materiel.materiels.Add(newmaterial);
+                //reponse si réussi:
+                return Ok(newmaterial);
             }
+            //reponse si échec:
             else
             {
                 return BadRequest();
             }
-            //PUT->Mise à jour:
-            [HttpPut("{id}")]
-            public IActionResult UpdateBook([FromRoute] int id, [FromBody] Book book)
+        }
+        #endregion
+        //Update meteriel:
+        #region PUT( update materiel)
+        //PUT->Mise à jour par id:
+        [HttpPut("{id}")]
+        public IActionResult UpdateMateriel([FromRoute] int id, [FromBody] Materiel materiel)
+        {
+            if (Materiel.materiels.Exists(m => m.Id == id))
             {
-                if (Book.books.Exists(b => b.Id == id))
-                {
-                    Book b = Book.books.Find(b => b.Id == id);
-                    b.Title = book.Title;
-                    b.Autor = book.Autor;
-                    return Ok(book);
-                }
-
-                else { return NotFound(); }
+                Materiel m = Materiel.materiels.Find(m => m.Id == id);
+                m.Name = materiel.Name;
+                m.ServiceDat = materiel.ServiceDat;
+                return Ok(materiel);
             }
-            [HttpDelete("{id}")]
-            [ProducesResponseType(StatusCodes.Status204NoContent)]
-            [ProducesResponseType(StatusCodes.Status404NotFound)]
-            public async Task<IActionResult> DeleteBook([FromRoute] int id)
+
+            else { return NotFound("Le matériel à mettre à jour n'existe pas."); }
+        }
+        #endregion
+        #region delete materiel
+        [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> DeleteMateriel([FromRoute] int id)
+        {
+            Materiel m = Materiel.materiels.Find(m => m.Id == id);
+            if (m is null)
             {
-                Book b = Book.books.Find(b => b.Id == id);
-                if (b is null)
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    Book.books.Remove(b);
-                    return NoContent();
-                }
-                // GET: api/<MaterielController>
-                [HttpGet]
-                public IEnumerable<string> Get()
-                {
-                    return new string[] { "value1", "value2" };
-                }
-
-                // GET api/<MaterielController>/5
-                [HttpGet("{id}")]
-                public string Get(int id)
-                {
-                    return "value";
-                }
-
-                // POST api/<MaterielController>
-                [HttpPost]
-                public void Post([FromBody] string value)
-                {
-                }
-
-                // PUT api/<MaterielController>/5
-                [HttpPut("{id}")]
-                public void Put(int id, [FromBody] string value)
-                {
-                }
-
-                // DELETE api/<MaterielController>/5
-                [HttpDelete("{id}")]
-                public void Delete(int id)
-                {
-                }
+                return NotFound("Le matériel à supprimer n'existe pas.");
+            }
+            else
+            {
+                Materiel.materiels.Remove(m);
+                return NoContent();
             }
         }
+        #endregion
+
+
+        // GET
+        #region get materiel by id
+        [HttpGet("{id}")]
+        [Route("/materiel/{id}")]
+        public IActionResult GetMateriel([FromRoute] int id)
+        {
+            if (id > 0)
+            {
+                Materiel m = Materiel.materiels.Find(m => m.Id == id);
+                if (m is null)
+                {
+                    return NotFound("Le matériel à supprimer n'existe pas.");
+                }
+                else { return Ok(m); }
+            }
+            else
+            {
+                return NotFound("Le matériel à supprimer n'existe pas.");
+            }
+        }
+
+
+        #region getAllMateriels
+        [HttpGet]
+        [Route("/materiels")]
+        public IActionResult getAllMateriels()
+        {
+            return Ok(Materiel.materiels);
+        }
+        #endregion
+
+
+
+
+    }
+}
+#endregion
+
